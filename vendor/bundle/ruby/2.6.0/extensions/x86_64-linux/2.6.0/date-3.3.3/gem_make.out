@@ -1,0 +1,33 @@
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/date-3.3.3/ext/date
+/usr/local/rbenv/versions/2.6.5/bin/ruby -I /usr/local/rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20230515-435816-gagru1.rb extconf.rb
+checking for rb_category_warn()... no
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/date-3.3.3/ext/date
+make "DESTDIR=" clean
+
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/date-3.3.3/ext/date
+make "DESTDIR="
+compiling date_core.c
+date_core.c: In function ‘datetime_to_time’:
+date_core.c:310:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     union DateData *adat;\
+     ^
+date_core.c:9065:2: note: in expansion of macro ‘get_d1a’
+  get_d1a(self);
+  ^~~~~~~
+date_core.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/date-3.3.3/ext/date
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20230515-435816-bwl2so

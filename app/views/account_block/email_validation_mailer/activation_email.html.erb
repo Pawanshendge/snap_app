@@ -1,0 +1,440 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+    <title></title>
+
+    <style type="text/css">
+      @media only screen and (min-width: 520px) {
+        .u-row {
+          width: 500px !important;
+        }
+        .u-row .u-col {
+          vertical-align: top;
+        }
+
+        .u-row .u-col-100 {
+          width: 500px !important;
+        }
+
+      }
+
+      @media (max-width: 520px) {
+        .u-row-container {
+          max-width: 100% !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        .u-row .u-col {
+          min-width: 320px !important;
+          max-width: 100% !important;
+          display: block !important;
+        }
+        .u-row {
+          width: calc(100% - 40px) !important;
+        }
+        .u-col {
+          width: 100% !important;
+        }
+        .u-col > div {
+          margin: 0 auto;
+        }
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      table,
+      tr,
+      td {
+        vertical-align: top;
+        border-collapse: collapse;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .ie-container table,
+      .mso-container table {
+        table-layout: fixed;
+      }
+
+      * {
+        line-height: inherit;
+      }
+
+      a[x-apple-data-detectors='true'] {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      table, td { color: #000000; } a { color: #0000ee; text-decoration: underline; } @media (max-width: 480px) { #u_content_image_3 .v-container-padding-padding { padding: 0px !important; } }
+    </style>
+
+
+
+  </head>
+  <a href="#"><%=  image_tag(attachments['logo.jpg'].url, style: 'width:336px; height:69px;')%></a>
+  <p>
+
+    Welcome to Snaps Like App<br>
+    <%= "you can login through this link #{"https://snapslikeapp2-89023-react-native.b89023.stage.eastus.az.svc.builder.ai/EmailAccountLogin"}" %>
+  </p>
+
+
+  <body class="clean-body u_body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #ffffff;color: #000000">
+
+    <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #ffffff;width:100%" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr style="vertical-align: top">
+          <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+            <!-- finding custom email content -->
+            <% custom_email = BxBlockContentManagement::CustomEmail.find_by(email_type: "activation_email") %>
+            <div class="u-row-container" style="padding: 0px;background-color: transparent">
+              <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+                <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+
+                  <div class="u-col u-col-100" style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+                    <div style="width: 100% !important;">
+                      <!--[if (!mso)&(!IE)]><!--><div style="padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+
+                        <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                          <tbody>  
+                            <tr>
+                              <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="padding-right: 0px;padding-left: 0px;" align="center">
+                                      <%#=  image_tag(attachments['image-1.png'].url ,style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%') %>
+                                      <%#byebug%>
+                                      <% if custom_email&.image1&.present? %>
+                                        <img src="<%= "#{Rails.application.routes.url_helpers.url_for(custom_email.image1)}" %>" alt="image1" style="outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block !important; border:none; height:auto; float: none; width:100%">
+                                        <%#= image_tag(Rails.application.routes.url_helpers.url_for(custom_email.image1), style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:170px; float: none; width:100%') %>
+                                      <% else %>
+                                        <%=  image_tag(attachments['image-1.png'].url ,style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%') %>
+                                      <% end %>  
+                                    </td>
+                                  </tr>
+                                </table>
+
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:20px 40px 30px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                <div style="line-height: 140%; text-align: left; word-wrap: break-word;">
+                                  <p style="font-size: 14px; line-height: 140%;"><strong><span style="font-size: 18px; line-height: 25.2px; color: #323235"> <!--Your Whitebook Account has been created!-->
+                                    <%= custom_email&.title&.html_safe%>
+                                    <br /><br /></span></strong><span style="font-size: 18px; line-height: 25.2px; color: #323235">Hi 
+                                      <strong><%= @account.email %>,</strong></span><br /><span style="font-size: 16px; line-height: 22.4px; color: #323235">
+                                        Your Whitebook account has been successfully created.
+                                      </span></p>
+                                      <p style="font-size: 14px; line-height: 140%;">&nbsp;</p>
+                                      <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 16px; line-height: 22.4px; color: #858585">Your username is <a rel="noopener" style="color: #3b61a0" href="mailto:xyz@gmail.com." target="_blank"><%= @account.email %> </a></span></p>
+                                      <p style="font-size: 14px; line-height: 140%;">&nbsp;</p>
+                                      <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 16px; line-height: 22.4px; color: #858585">You can access your account to view orders, change your</span><br /><span style="font-size: 16px; line-height: 22.4px; color: #858585">password and more <a style="color: #3b61a0" href="http://whitebook.co.in/" target="_blank">www.whitebook.co.in</a>.</span></p>
+                                    </div>
+                                  </td>
+                                </tr> 
+                              </tbody>
+                            </table>
+                            <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                              <tbody>
+                                <tr>
+                                  <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:arial,helvetica,sans-serif;" align="left">
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td style="padding-right: 0px;padding-left: 0px;" align="center">
+                                          <a href="http://whitebook.co.in/" target="_blank">
+                                            <%#=  image_tag(attachments['image-5.png'].url ,style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                            <% if custom_email&.image2&.present? %>
+                                              <img src="<%= "#{Rails.application.routes.url_helpers.url_for(custom_email.image2)}" %>" alt="image 2" style='outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%' >
+                                            <%else%>
+                                              <%=  image_tag(attachments['image-5.png'].url ,style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                            <%end%>
+                                            <!-- <img align="center" border="0" src="images/image-5.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;" width="100%"/> -->
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                              <tbody>
+                                <tr>
+                                  <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:arial,helvetica,sans-serif;" align="left">
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td style="padding-right: 0px;padding-left: 0px;" align="center">
+                                          <a href="http://whitebook.co.in/" target="_blank">
+                                            <%#=  image_tag(attachments['image-6.png'].url, style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                            <% if custom_email&.image3&.present? %>
+                                              <img src="<%= "#{Rails.application.routes.url_helpers.url_for(custom_email.image3)}" %>" alt="image 3" style='outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%'>
+                                            <%else%>
+                                              <%=  image_tag(attachments['image-6.png'].url, style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                            <%end%>
+                                             <!-- <img align="center" border="0" src="images/image-6.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;" width="100%"/>   -->
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                              <tbody>
+                                <tr>
+                                  <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:arial,helvetica,sans-serif;" align="left">
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td style="padding-right: 0px;padding-left: 0px;" align="center">
+                                          <%#=  image_tag(attachments['image-2.png'].url,style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                          <% if custom_email&.image4&.present? %>
+                                              <img src="<%= "#{Rails.application.routes.url_helpers.url_for(custom_email.image4)}" %>" alt="image 4" style='outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%'>
+                                          <%else%>
+                                            <%= image_tag(attachments['image-2.png'].url,style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                          <%end%>
+                                          <!-- <img align="center" border="0" src="images/image-2.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;" width="100%"/> -->
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table id="u_content_image_3" style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                              <tbody>
+                                <tr>
+                                  <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:arial,helvetica,sans-serif;" align="left">
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td style="padding-right: 0px;padding-left: 0px;" align="center">
+                                          <a href="//whitebook.co.in/contact-us/" target="_blank">
+                                            <%#=  image_tag(attachments['image-4.png'].url, style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                            <% if custom_email&.image5&.present? %>
+                                              <img src="<%= "#{Rails.application.routes.url_helpers.url_for(custom_email.image5)}" %>" alt="image 5" style='outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%'>
+                                            <%else%>
+                                              <%=  image_tag(attachments['image-4.png'].url, style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                            <%end%>
+                                          <!-- <img align="center" border="0" src="images/image-4.png"  style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;" width="100%"/> -->
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:40px 30px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                  <div style="line-height: 140%; text-align: center; word-wrap: break-word;">
+                                      <!--    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 18px; line-height: 25.2px;"><strong>Our vision is simple: making homes happier,</strong></span><br /><span style="font-size: 18px; line-height: 25.2px;"><strong>bonding families better and celebrating life to the</strong></span><br /><span style="font-size: 18px; line-height: 25.2px;"><strong>fullest !!</strong></span></p>
+                                    <p style="font-size: 14px; line-height: 140%;">&nbsp;</p>
+                                    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;"><strong>We believe that everyday fun, quirky and unexpected moments should be captured, preserved and celebrated together.</strong></span></p>  -->
+                                    <%= custom_email&.description&.html_safe%>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                      <td style="padding-right: 0px;padding-left: 0px;" align="center">
+                                        <a href="#" target="_blank">
+
+                                          <%#=  image_tag(attachments['image-3.png'].url ,style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                          <% if custom_email&.image6.present? %>
+                                              <img src="<%= "#{Rails.application.routes.url_helpers.url_for(custom_email.image6)}" %>" alt="image 6"  style='outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%'>
+                                          <%else%> 
+                                            <%=  image_tag(attachments['image-3.png'].url ,style: 'outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; clear:both; display:inline-block; !important border:none; height:auto; float: none; width:100%')%>
+                                          <%end%>
+                                          <!-- <img align="center" border="0" src="images/image-3.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;" width="100%"/> -->
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="u-row-container" style="padding: 0px;background-color: transparent">
+                <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+                  <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+
+                    <div class="u-col u-col-100" style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+                      <div style="background-color: #8da4ee;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                        <!--[if (!mso)&(!IE)]><!--><div style="padding: 30px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]-->
+
+                        <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                  <div style="color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
+                                    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 16px; line-height: 22.4px;">Phone no: <a style="color: #ffffff; text-decoration: none" href="tel:916364182702">
+                                      <!-- +91 6364-182702 -->
+                                      <%= custom_email&.phone_no %>
+                                    </a></span></p>
+                                  </div>
+
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:5px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                  <div style="color: #ffffff; line-height: 140%; text-align: left; word-wrap: break-word;">
+                                    <p style="font-size: 14px; line-height: 140%; text-align: center;"><strong><span style="font-size: 16px; line-height: 22.4px;">Address :</span></strong></p>
+                                  </div>
+
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                  <div style="color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
+                                    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 16px; line-height: 22.4px;">
+                                      <!-- Site No. 191, SLV Complex, 2nd Sector, 27th Main, 19th Cross, HSR Layout, Bangalore - 560102 -->
+                                      <%= custom_email&.address&.html_safe %>
+                                    </span></p>
+                                  </div>
+
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:5px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                  <div style="color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
+                                    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 16px; line-height: 22.4px;"><strong>Email</strong>: <a href="mailto:customercare@whitebook.co.in" style="color: #ffffff; text-decoration: none">
+                                      <!-- customercare@whitebook.co.in -->
+                                      <%= custom_email&.email %>
+
+                                    </a></span></p>
+                                  </div>
+
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                  <div style="color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
+                                    <p style="line-height: 140%; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><strong>Timing of s</strong><span style="font-size: 16px; line-height: 22.4px;"><strong>ervice</strong>:
+                                     <!-- 10 am to 6 pm (monday to friday) -->
+                                     <%= custom_email&.timing_of_service %>
+                                   </span></span></p>
+                                 </div>
+
+                               </td>
+                             </tr>
+                           </tbody>
+                         </table>
+
+                         <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                <table height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 2px solid #ffffff;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                  <tbody>
+                                    <tr style="vertical-align: top">
+                                      <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                        <span>&#160;</span>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                <div style="color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
+                                  <p style="font-size: 14px; line-height: 120%;"><span style="font-size: 11px; line-height: 14px;">This email was sent to you as a registered member of <a style="color: #ffffff; text-decoration: none; border-bottom: 2px solid #ffffff" rel="noopener" href="mailto:customercare@whitebook.co.in" target="_blank">customercare@whitebook.co.in</a> To update your emails preferences <a rel="noopener" style="color: #ffffff; text-decoration: none; border-bottom: 2px solid #ffffff" href="#">click here</a>. Use of service and website is subject to our <a rel="noopener" style="color: #ffffff; text-decoration: none; border-bottom: 2px solid #ffffff" href="//whitebook.co.in/terms-and-conditions/" target="_blank">Terms &amp; Services</a> and <a rel="noopener" style="color: #ffffff; text-decoration: none; border-bottom: 2px solid #ffffff" href="//whitebook.co.in/privacy-policy/" target="_blank">Privacy Statement</a>.</span></p>
+                                </div>
+
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
+
+                                <div style="color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
+                                  <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">copyright@varahome pvt ltd. All rights reserved</span></p>
+                                </div> 
+
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

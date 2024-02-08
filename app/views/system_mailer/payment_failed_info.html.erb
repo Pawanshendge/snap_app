@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p><%= "Order Details" %></p>
+    <br>
+    <p><b>"RazorPay Order Id:"</b><%= @order.razorpay_order_id%></p>
+    <p><b>"order_number": </b> <%= @order.order_number %></p>
+    <p><b>"status": </b> <%= @order.status %></p>
+    <p><b>"no_of_pages": </b> <%= @order.no_of_pages %></p>
+    <p><b>"book_size": </b> <%= @order.book_size %></p>
+    <p><b>"book_title": </b> <%= @order.book_title %></p>
+    <p><b>"book_color": </b> <%= @order.book_color %></p>
+    <p><b>"cover_type": </b> <%= @order.cover_type %></p>
+    <p><b>"paper_type": </b> <%= @order.paper_type %></p>
+    <p><b>"tax_charges": </b> <%= @order.tax_charges %></p>
+    <p><b>"delivery_charges": </b> <%= @order.delivery_charges %></p>
+    <p><b>"sub_total": </b> <%= @order.sub_total %></p>
+    <br>
+    <br>
+    <p>Thanks,</p>
+    <p>Snaps Like App</p>
+  </body>
+</html>

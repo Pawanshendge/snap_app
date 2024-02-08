@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+  	 <p><%= "Payment verified details" %></p>
+    <br>
+    <p><b>order_number: </b> <%= @order.order_number %></p>
+    <p><b>sub_total: </b> <%= @order.sub_total %></p>
+    <p><b>status: </b> <%= @order&.status %></p>
+    <p><b>no_of_pages: </b> <%= @order.no_of_pages %></p>
+    <p><b>book_size: </b> <%= @order.book_size %></p>
+    <p><b>book_title: </b> <%= @order.book_title %></p>
+    <p><b>book_color: </b> <%= @order.book_color %></p>
+    <p><b>cover_type: </b> <%= @order.cover_type %></p>
+    <p><b>paper_type: </b> <%= @order.paper_type %></p>
+    <p><b>tax_charges: </b> <%= @order.tax_charges %></p>
+    <p><b>delivery_charges: </b> <%= @order.delivery_charges %></p>
+    <br>
+
+ 	<p><b>Status: </b><%= @order_transaction&.status %></p>
+ 	<p><b>Razorpay Order ID: </b><%= @order_transaction&.razorpay_order_id %></p>
+ 	<p><b>Razorpay Payment ID: </b><%= @order_transaction&.razorpay_payment_id %></p>
+ 	<p><b>Razorpay Signature: </b><%= @order_transaction&.razorpay_signature %></p>
+    <br>
+    <br>
+    
+    <p>Thanks,</p>
+    <p>Snaps Like App</p>
+  </body>
+</html>

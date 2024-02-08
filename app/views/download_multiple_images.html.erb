@@ -1,0 +1,206 @@
+   <!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+
+       .page
+        {
+            width: 8in;
+            height: 8in;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            page-break-after: always;
+        }
+        .page-caption{
+            width: 8in;
+            height: 8in;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            page-break-after: always;
+        }
+        .square-full
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .ss-div
+        {
+            width: 6.5in;
+            height: 6.5in;
+        }
+        .square-smartscale
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .square-fit
+        {
+            object-fit: cover;
+            width: auto;
+            height: auto;
+            max-height: 100%;
+            max-width: 100%;
+        }
+        .sc-div
+        {
+            width: 6.5in;
+            height: 6in;
+        }
+        .square-caption
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .landscape-full
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .ls-fit-div
+        {
+            width: 8in;
+            height: 6in;
+        }
+        .landscape-fit-one
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .landscape-fit-two
+        {
+            object-fit: cover;
+            width: auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .portrait-full
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .ps-div
+        {
+            width: 6.5in;
+            height: 6.5in;
+        }
+        .portrait-smartscale
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .portrait-fit
+        {
+            object-fit: cover;
+            width: auto;
+            height: auto;
+            max-height: 100%;
+        }
+        .pc-div
+        {
+            width: 6.5in;
+            height: 6in;
+        }
+        .portrait-caption
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <center>
+        <% if image.image_type.present? %>
+          <% case image.image_type %>
+              <% when "squareFull" %>
+                <div class="page">
+                  <%= image_tag(image, :class => 'square-full' ) %>
+                </div><br><br>
+
+              <% when "squareSmartScale" %>
+                <div class='page'>
+                  <div class="ss-div">
+                    <%= image_tag(image, :class => 'square-smartscale') %>
+                  </div>
+                </div><br><br>
+
+              <% when "squareFit" %>
+                <div class='page'>
+                  <%= image_tag(image, :class => 'square-fit') %>
+                </div><br><br>
+
+              <% when "caption" %>
+                <div class='page-caption'>
+                  <div class="sc-div">
+                    <%= image_tag(image, :class => 'square-caption') %> 
+                  </div>
+                  <div>
+                    <center>
+                      <p><%= image.image_caption %></p>
+                    </center>
+                  </div>
+                </div><br><br>
+
+              <% when  "landscapeFull" %>
+                <div class="page">
+                  <%= image_tag(image, :class => 'landscape-full' ) %>
+                </div><br><br>
+
+              <% when "landscapeF1" %> 
+                <div class='page'>
+                  <div class="ls-fit-div">
+                    <%= image_tag(image, :class => 'landscape-fit-one' ) %>
+                  </div>
+                </div><br><br>
+
+              <% when "landscapeF2" %> 
+                <div class='page'>
+                    <%= image_tag(image, :class => 'landscape-fit-two' ) %>
+                </div><br><br>
+
+              <% when "landscapeCaption" %>
+                <div class="page-caption">
+                  <%= image_tag(image, :class => 'landscape-fit-two' ) %>
+                  <div>
+                    <center>
+                      <p><%= image.image_caption %></p>
+                    </center>
+                  </div>
+                </div><br><br>
+
+              <% when "potraitFull" %>
+                <div class="page">
+                  <%= image_tag(image, :class => 'portrait-full' ) %>
+                </div><br><br>
+
+              <% when "potraitSmartScale" %>
+                <div class="page">
+                  <div class="ps-div">
+                    <%= image_tag(image, :class => 'portrait-smartscale' ) %>
+                  </div>
+                </div><br><br>
+
+              <% when "potraitF1"%>
+                <div class="page">
+                  <%= image_tag(image, :class => 'portrait-fit' ) %>
+                </div><br><br>
+          <% end %>
+        <% else %>
+              <div class="page">
+                <%= image_tag(image, width: "#{image.width}px" , height: "#{image.height}px" ) %>
+              </div><br><br>
+        <% end %>
+
+    </center>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+deactivate_past_stories:
+  cron: "*/30 * * * *" # execute at every 30 minutes
+  class: "BxBlockStories::DeactivePastStoriesJob"
+
+deactivate_expired_offers:
+  cron: "*/30 * * * *" # execute at every 30 minutes
+  class: "BxBlockDiscountsoffers::DeactiveExpiredOffersJob"
+
+delete_unused_books:
+  cron: "*/59 * * * *" # execute at every 30 minutes
+  class: "BxBlockBook::DeleteUnusedBooksJob"

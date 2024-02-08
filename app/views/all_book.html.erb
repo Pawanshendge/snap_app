@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Book</h2>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Month</th>
+    <th> Account </th>
+    <th>Book Color</th>
+    <th>title_layout</th>
+    <th>cover_type</th>
+    <th>paper_type</th>
+    <th>book_title</th>
+    <th>month_range</th>
+    <th>month_year</th>
+
+  </tr>
+  <% books.each do |book| %>
+    <tr>
+      
+        <td><%= book.year %></td>
+        <td><%= book.month %></td>
+        <td><%= book.account%></td>
+        <td><%= book.book_color %></td>
+        <td><%= book.title_layout %></td>
+        <td><%= book.cover_type %></td>
+        <td><%= book.paper_type %></td>
+        <td><%= book.book_title %></td>
+        <td><%= book.month_range %></td>
+        <td><%= book.month_year %></td>
+    </tr>
+   <% end %>
+
+</table>
+
+</body>
+</html>

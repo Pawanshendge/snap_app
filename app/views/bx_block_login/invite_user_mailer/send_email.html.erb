@@ -1,0 +1,67 @@
+
+<%# <!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Action</title>
+</head>
+<body>
+  <p>Hello!</p>
+  <p>Click the button below to update your record:</p>
+  <button id="updateRecordButton">Update Record</button>
+
+    <script>
+      
+    </script>
+ </body>
+</html>
+ %>
+
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <h1>Hello, friend_email: <%= @user.email %>!</h1>
+    friend_email=<%= @user.id %>
+    <h1>Hello, this is Owner email: <%= @owner_email.email%></h1>
+    <p>This is your invitation email.</p>
+    <button id="acceptButton">Accept</button>
+    <button onclick="rejectInvitation()" type="button">Reject</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // Your JavaScript code goes here
+      $(document).ready(function() {
+        $('#acceptButton').click(function() {
+          acceptInvitation();
+        });
+      });
+
+      function acceptInvitation() {
+        // Make an AJAX request to your Rails backend
+        $.ajax({
+          url: 'http://localhost:3000/bx_block_book/invite_users/request_responses',
+          type: 'POST',
+          dataType: 'json',
+          data: { email: <%= @user.email %> },
+          success: function(response) {
+            console.log('Invitation accepted:', response);
+            // Optionally, update the UI or perform other actions on success
+          },
+          error: function(error) {
+            console.error('Error accepting invitation:', error);
+            // Handle errors or show a message to the user
+          }
+        });
+      }
+
+      function rejectInvitation() {
+        // Implement the logic for rejecting the invitation
+        console.log('Invitation rejected');
+      }
+    </script>
+
+  </body>
+</html>

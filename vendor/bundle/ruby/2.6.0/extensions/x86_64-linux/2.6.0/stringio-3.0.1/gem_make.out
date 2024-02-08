@@ -1,0 +1,16 @@
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/stringio-3.0.1/ext/stringio
+/usr/local/rbenv/versions/2.6.5/bin/ruby -I /usr/local/rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20220610-764-hywq9l.rb extconf.rb
+checking for rb_io_extract_modeenc() in ruby/io.h... no
+creating Makefile
+
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/stringio-3.0.1/ext/stringio
+make "DESTDIR=" clean
+
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/stringio-3.0.1/ext/stringio
+make "DESTDIR="
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/stringio-3.0.1/ext/stringio
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20220610-764-1hhropz

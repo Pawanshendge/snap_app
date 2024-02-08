@@ -1,0 +1,85 @@
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/date-3.2.2/ext/date
+/usr/local/rbenv/versions/2.6.5/bin/ruby -I /usr/local/rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20220909-4381-1hqea0y.rb extconf.rb
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/date-3.2.2/ext/date
+make "DESTDIR=" clean
+
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/date-3.2.2/ext/date
+make "DESTDIR="
+compiling date_core.c
+date_core.c: In function ‘check_limit’:
+date_core.c:4349:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     size_t slen = RSTRING_LEN(str);
+     ^~~~~~
+date_core.c: In function ‘date_s_parse’:
+date_core.c:4452:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__parse(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘date_s_iso8601’:
+date_core.c:4520:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__iso8601(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘date_s_rfc3339’:
+date_core.c:4579:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__rfc3339(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘date_s_xmlschema’:
+date_core.c:4638:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__xmlschema(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘date_s_rfc2822’:
+date_core.c:4699:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__rfc2822(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘date_s_httpdate’:
+date_core.c:4758:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__httpdate(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘date_s_jisx0301’:
+date_core.c:4821:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__jisx0301(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘datetime_s_parse’:
+date_core.c:8208:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__parse(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘datetime_s_iso8601’:
+date_core.c:8252:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__iso8601(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘datetime_s_rfc3339’:
+date_core.c:8292:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__rfc3339(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘datetime_s_xmlschema’:
+date_core.c:8332:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__xmlschema(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘datetime_s_rfc2822’:
+date_core.c:8373:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__rfc2822(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘datetime_s_httpdate’:
+date_core.c:8413:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__httpdate(argc2, argv2, klass);
+  ^~~~~
+date_core.c: In function ‘datetime_s_jisx0301’:
+date_core.c:8458:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  VALUE hash = date_s__jisx0301(argc2, argv2, klass);
+  ^~~~~
+date_core.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /data/home/ubuntu/Desktop/snapslikeapp2-89023-ruby/template-app/vendor/bundle/ruby/2.6.0/gems/date-3.2.2/ext/date
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20220909-4381-f5ul6s

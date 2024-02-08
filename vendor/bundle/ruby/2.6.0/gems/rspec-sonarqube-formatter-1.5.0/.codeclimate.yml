@@ -1,0 +1,10 @@
+version: "2"
+plugins:
+  fixme:
+    enabled: true
+  bundler-audit:
+    enabled: true
+  editorconfig:
+    enabled: true
+  rubocop:
+    enabled: true
